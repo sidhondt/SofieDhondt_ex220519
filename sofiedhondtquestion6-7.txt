@@ -1,0 +1,28 @@
+QUESTION 6
+
+> db.bioinf_mongo_examen.find({drug:{$exists:true}}).count({$or:[{TABLET:"BUCCAL", TABLET:"SUBLINGUAL"}]})
+1691
+
+Question 7
+                                                           
+> db.bioinf_mongo_examen.find({company:{$exists:true}, percentage_of_side_effects:{$gt:10}})
+{ "_id" : ObjectId("588878f14ffaac26108556fe"), "drug" : "PRO-BANTHINE", "company" : "BioMarin Pharmaceutical Inc.", "method_of_admission" : [ "FOR SOLUTION; ORAL" ], "percentage_of_side_effects" : 11 }
+{ "_id" : ObjectId("588878f14ffaac2610855700"), "drug" : "DILANTIN-30", "company" : "AbbVie Inc.", "method_of_admission" : [ "FOR SOLUTION;INHALATION" ], "percentage_of_side_effects" : 13 }
+{ "_id" : ObjectId("588878f14ffaac2610855701"), "drug" : "HEDULIN", "company" : "AbbVie Inc.", "method_of_admission" : [ "SPRAY;INHALATION" ], "percentage_of_side_effects" : 13 }
+{ "_id" : ObjectId("588878f14ffaac2610855702"), "drug" : "M.V.I.-12", "company" : "AbbVie Inc.", "method_of_admission" : [ "SPRAY;INHALATION" ], "percentage_of_side_effects" : 12 }
+{ "_id" : ObjectId("588878f14ffaac2610855703"), "drug" : "M.V.I.-12 (WITHOUT VITAMIN K)", "company" : "AbbVie Inc.", "method_of_admission" : [ "SPRAY;INHALATION" ], "percentage_of_side_effects" : 13 }
+{ "_id" : ObjectId("588878f14ffaac2610855704"), "drug" : "UNITENSEN", "company" : "AbbVie Inc.", "method_of_admission" : [ "SPRAY;INHALATION" ], "percentage_of_side_effects" : 13 }
+{ "_id" : ObjectId("588878f14ffaac2610855705"), "drug" : "RAUDIXIN", "company" : "AbbVie Inc.", "method_of_admission" : [ "SPRAY;INHALATION", "INSERT;OPHTHALMIC" ], "percentage_of_side_effects" : 26 }
+{ "_id" : ObjectId("588878f14ffaac2610855772"), "drug" : "RENO-30", "company" : "Durata Therapeutics, Inc.", "method_of_admission" : [ "POWDER;INTRAPLEURAL", "EMULSION; OPHTHALMIC" ], "percentage_of_side_effects" : 12 }
+{ "_id" : ObjectId("588878f14ffaac2610855773"), "drug" : "CYSTOGRAFIN DILUTE", "company" : "Durata Therapeutics, Inc.", "method_of_admission" : [ "TABLET, TABLET;ORAL", "EMULSION; OPHTHALMIC" ], "percentage_of_side_effects" : 12 }
+{ "_id" : ObjectId("588878f14ffaac2610855774"), "drug" : "FLORINEF", "company" : "Durata Therapeutics, Inc.", "method_of_admission" : [ "POWDER;INTRAPLEURAL", "GEL;ENDOCERVICAL" ], "percentage_of_side_effects" : 10.5 }
+{ "_id" : ObjectId("588878f14ffaac2610855775"), "drug" : "BIPHETAMINE 20", "company" : "Durata Therapeutics, Inc.", "method_of_admission" : [ "TABLET, TABLET;ORAL", "GEL;ENDOCERVICAL" ], "percentage_of_side_effects" : 10.5 }
+{ "_id" : ObjectId("588878f14ffaac2610855776"), "drug" : "BIPHETAMINE 12.5", "company" : "Durata Therapeutics, Inc.", "method_of_admission" : [ "SOLUTION, ELIXIR;ORAL" ], "percentage_of_side_effects" : 12 }
+{ "_id" : ObjectId("588878f14ffaac2610855777"), "drug" : "BIPHETAMINE 7.5", "company" : "Durata Therapeutics, Inc.", "method_of_admission" : [ "SOLUTION, ELIXIR;ORAL", "TABLET, TABLET;ORAL" ], "percentage_of_side_effects" : 13 }
+{ "_id" : ObjectId("588878f14ffaac2610855778"), "drug" : "MEPHYTON", "company" : "Durata Therapeutics, Inc.", "method_of_admission" : [ "EMULSION; OPHTHALMIC", "TABLET, TABLET;ORAL" ], "percentage_of_side_effects" : 13 }
+{ "_id" : ObjectId("588878f14ffaac2610855779"), "drug" : "SERPALAN", "company" : "Durata Therapeutics, Inc.", "method_of_admission" : [ "EMULSION; OPHTHALMIC", "TABLET, TABLET;ORAL" ], "percentage_of_side_effects" : 13 }
+{ "_id" : ObjectId("588878f14ffaac26108557d2"), "drug" : "ORA-TESTRYL", "company" : "AbbVie Inc.", "method_of_admission" : [ "FOR SOLUTION;INHALATION" ], "percentage_of_side_effects" : 13 }
+{ "_id" : ObjectId("588878f14ffaac26108557d3"), "drug" : "DARANIDE", "company" : "AkPharma Inc", "method_of_admission" : [ "SOLUTION;ORAL, RECTAL", "SOLUTION;INTRAVENOUS" ], "percentage_of_side_effects" : 15 }
+{ "_id" : ObjectId("588878f14ffaac26108557d4"), "drug" : "KEVEYIS", "company" : "Anchen Pharmaceuticals, Inc", "method_of_admission" : [ "SYSTEM; TRANSDERMAL" ], "percentage_of_side_effects" : 11 }
+{ "_id" : ObjectId("588878f14ffaac26108557e7"), "drug" : "IONAMIN", "company" : "Alcon", "method_of_admission" : [ "SOLUTION;SUBCUTANEOUS" ], "percentage_of_side_effects" : 11 }
+{ "_id" : ObjectId("588878f14ffaac26108557ea"), "drug" : "DIUPRES-500", "company" : "AkPharma Inc", "method_of_admission" : [ "SYSTEM;INTRADERMAL" ], "percentage_of_side_effects" : 10.5 }
