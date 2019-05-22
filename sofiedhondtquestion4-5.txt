@@ -1,0 +1,29 @@
+Question 4
+
+mysql> SELECT gene_name, seq_region_start, seq_region_end, (seq_region_end - seq_region_start +1) AS length FROM gene ORDER BY length LIMIT 1;
++-----------+------------------+----------------+--------+
+| gene_name | seq_region_start | seq_region_end | length |
++-----------+------------------+----------------+--------+
+| TRDD1     |         22907539 |       22907546 |      8 |
++-----------+------------------+----------------+--------+
+1 row in set (0,06 sec)
+
+Question5A
+
+mysql> SELECT COUNT(*), chromosome FROM gene WHERE description LIKE "%cancer%" GROUP BY chromosome ORDER BY COUNT(*) DESC LIMIT 1 SKIP1;          +----------+------------+
+| COUNT(*) | chromosome |
++----------+------------+
+|        5 | 9          |
++----------+------------+
+2 rows in set (0,06 sec)
+
+5B
+mysql> SELECT COUNT(*) FROM exon JOIN exon_transcript ON exon_transcript.exon_id=exon.exon_id JOIN transcript ON transcript.transcript_id=exon_transcript.transcript_id JOIN gene ON gene.gene_id=transcript.gene_id WHERE chromosome="9";
++----------+
+| COUNT(*) |
++----------+
+|    45679 |
++----------+
+1 row in set (0,23 sec)
+
+
